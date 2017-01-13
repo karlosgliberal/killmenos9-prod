@@ -11,8 +11,20 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="stylesheet" href="app/23a4904d.vendor.css"/>
-    <link rel="stylesheet" href="app/599cb616.app.css"/>
+    <!-- build:css(client) app/vendor.css -->
+      <!-- bower:css -->
+      <link rel="stylesheet" href="bower_components/magic/magic.min.css" />
+      <link rel="stylesheet" href="bower_components/angular-hotkeys/build/hotkeys.min.css" />
+      <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog.css" />
+      <link rel="stylesheet" href="bower_components/ngDialog/css/ngDialog-theme-default.css" />
+      <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css({.tmp,client}) app/app.css -->
+    <link rel="stylesheet" href="app/app.css">
+      <!-- injector:css -->
+      <link rel="stylesheet" href="bower_components/magic/magic.css">
+      <!-- endinjector -->
+    <!-- endbuild -->
   </head>
   <body ng-app="killmenos9App">
     <!--[if lt IE 7]>
@@ -37,8 +49,27 @@
     <script src="bower_components/es5-shim/es5-shim.js"></script>
     <script src="bower_components/json3/lib/json3.min.js"></script>
     <![endif]-->
-    <script src="app/2aa0bdd9.vendor.js"></script>
+    <!-- build:js({client,node_modules}) app/vendor.js -->
+      <!-- bower:js -->
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-resource/angular-resource.js"></script>
+      <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+      <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+      <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+      <script src="bower_components/angular-hotkeys/build/hotkeys.min.js"></script>
+      <script src="bower_components/ngDialog/js/ngDialog.js"></script>
+      <!-- endbower -->
+    <!-- endbuild -->
 
-        <script src="app/972c2e93.app.js"></script>
+        <!-- build:js({.tmp,client}) app/app.js -->
+        <script src="app/app.js"></script>
+          <!-- injector:js -->
+          <script src="app/main/main.controller.js"></script>
+          <script src="app/main/main.js"></script>
+          <script src="components/navbar/navbar.controller.js"></script>
+          <!-- endinjector -->
+        <!-- endbuild -->
 </body>
 </html>
